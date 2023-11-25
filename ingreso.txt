@@ -1,0 +1,22 @@
+Puerta 2;Antonio Perez;Cedula Ciudadania;Automovil;Docente;ADS784
+Puerta 2;Juan;Cedula Ciudadania;Moto;Visitante;ADS324
+Puerta 3;Daniela Rodriguez;Código Institucional;Bicicleta;Estudiante;asw2145
+2;Daniela Perez;Cedula Ciudadania;Moto;Docente;qwe125
+1;aaa;Cedula ciudadania;Automovil;Docente;asd123
+2;Sergio;Tarjeta de identidad;Peatonal;Estudiante;N/a
+5;Zeus ;Cedula ciudadania;Moto;Docente;123Avd
+3;Roberto Salas;Cedula ciudadania;Automovil;Docente;ADS123
+2;Andrea;Cedula ciudadania;Moto;Estudiante;SDW867
+2;Andrea;Tarjeta de identidad;Moto;Estudiante;ZSA567
+2;Andres;Cedula ciudadania;Moto;Docente;QHF354
+3;MaryLuz;Cedula ciudadania;Automovil;Administrativo;ERS234
+4;Arjuna;Cedula ciudadania;Bicicleta;Trabajador;QED456
+4;Ricardo Perez;Tarjeta de identidad;Moto;Trabajador;AQW524
+4;Sergio Saldana;Tarjeta de identidad;Peatonal;Visitante;N/A
+4;Sergio L;Tarjeta de identidad;Peatonal;Visitante;N/A
+4;Sergio Saldana;Tarjeta de identidad;Peatonal;Visitante;N/A
+3;Gustavo Perez;Cedula ciudadania;Automovil;Docente;SWQ548
+3;David Salamanca;Cedula ciudadania;Automovil;Docente;ABC456
+5;Juanita Perez;Tarjeta de identidad;Peatonal;Administrativo;N/A
+3;Alexander;Cedula ciudadania;Bicicleta;Docente;CWBlanca
+1;12;Cedula ciudadania;Automovil;Docente;ASD
