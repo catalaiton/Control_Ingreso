@@ -7,6 +7,8 @@ import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
@@ -14,11 +16,7 @@ import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 import modelo.ArchPdf;
 
-import modelo.Conexion;
-import modelo.ImagenEscritorio;
-import modelo.Ingreso;
-import modelo.IngresoDAO;
-import modelo.ListaIngresos;
+import modelo.*;
 import vista.*;
 /**
  *
@@ -26,7 +24,8 @@ import vista.*;
  */
 public class Controlador implements ActionListener{
     ListaIngresos ListIngreso;
-
+    Fecha fecha;
+    Hora hora;
     frmPrincipal frmP;
     frmBaseD frmBD;
     frmRegistrar frmR;
@@ -45,6 +44,8 @@ public class Controlador implements ActionListener{
         this.frmBD = new frmBaseD();
         this.frmS = new frmSalida();
         this.frmB = new frmBusqueda();
+        this.fecha = new Fecha();
+        this.hora = new Hora();
     }
     
     
@@ -66,7 +67,7 @@ public class Controlador implements ActionListener{
         //PDF
         if ((ae.getSource().equals(frmP.getMnuPDF()))) {
             ArchPdf archivo = new ArchPdf();
-            archivo.crear_PDF(ListIngreso);
+            archivo.crear_PDF(con);
             archivo.abrirpdf();
         }
         
@@ -86,7 +87,11 @@ public class Controlador implements ActionListener{
         //Consultar BD
         if(ae.getSource().equals(frmBD.getBtnConsultar())){
             IngresoDAO objIDAO = new IngresoDAO();
-            frmBD.getTblBD().setModel(objIDAO.consultar());
+            try {
+                frmBD.getTblBD().setModel(objIDAO.consultar());
+            } catch (IOException ex) {
+                Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
         
         //Filtrar estudiantes
@@ -144,8 +149,12 @@ public class Controlador implements ActionListener{
         
         if(ae.getSource().equals(frmB.getBtnBuscar())){
             IngresoDAO objIDAO = new IngresoDAO();
-            objIDAO.BuscarIngreso(frmB.getTxtDocumentoB().getText(), frmB.getTxtPuerta(), frmB.getTxtNombre(), frmB.getTxtTipoDocumento(), frmB.getTxtNDocumento(),
-                    frmB.getTxtIngreso(), frmB.getTxtMotivo(), frmB.getTxtPlacas(), frmB.getTxtEstado());
+            try {
+                objIDAO.BuscarIngreso(frmB.getTxtDocumentoB().getText(), frmB.getTxtPuerta(), frmB.getTxtNombre(), frmB.getTxtTipoDocumento(), frmB.getTxtNDocumento(),
+                        frmB.getTxtIngreso(), frmB.getTxtMotivo(), frmB.getTxtPlacas(), frmB.getTxtEstado());
+            } catch (IOException ex) {
+                Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
         
         //Registro
@@ -171,7 +180,7 @@ public class Controlador implements ActionListener{
                         frmR.getCmbMotivo().getSelectedItem().toString(),
                         frmR.getTxtPlacas().getText());
                 ListIngreso.getListaI().add(objI);
-                con.EscribeDatos(objI.datos());
+                con.EscribeDatos(fecha.toString()+" "+hora.toString()+"\n"+"Nuevo ingreso\n\n"+objI.datos()+"\n");
                 this.ingreso.setObjI(objI);
                 JOptionPane.showMessageDialog(frmR, "Datos Registrados...\n"+objI.toString());
                 JOptionPane.showMessageDialog(frmR, this.ingreso.insertar2());
@@ -194,8 +203,9 @@ public class Controlador implements ActionListener{
         
         if(ae.getSource().equals(frmS.getBtnConsultar())){
             IngresoDAO objIDAO = new IngresoDAO();
-        if("Salida denegada".equals(objIDAO.permisoSalida(frmS.getTxtDocumento().getText(),frmS.getTxtPlacas().getText()))){
-                boolean pinValido = false;
+            try {
+                if("Salida denegada".equals(objIDAO.permisoSalida(frmS.getTxtDocumento().getText(),frmS.getTxtPlacas().getText()))){
+                    boolean pinValido = false;
                     int intentos = 3;
 
                     while (!pinValido && intentos > 0) {
@@ -205,31 +215,50 @@ public class Controlador implements ActionListener{
                         if (pinIngresado != null && pinIngresado.equals("UD1234")) {
                             JOptionPane.showMessageDialog(null, "PIN válido. Vuelve a llenar los datos");
                             pinValido = true;
+                            con.EscribeDatos(fecha.toString()+" "+hora.toString()+"\n"+"Pin valido, Nuevo intento de solicitud de salida\n");
                         } else {
                             
-                            JOptionPane.showMessageDialog(null, "PIN incorrecto. Intentos restantes: " + intentos);
+                            JOptionPane.showMessageDialog(null, "PIN incorrecto. Vuelva a intentarlo" );
+                            con.EscribeDatos(fecha.toString()+" "+hora.toString()+"\n"+"Pin incorrecto, se velve a solicitar pin\n");
+                            
                         }
-                     }
-
-                    if (!pinValido) {
-                        JOptionPane.showMessageDialog(null, "Demasiados intentos fallidos. La aplicación se cerrará.");
-                        System.exit(0);
                     }
-            }else{
-                JOptionPane.showMessageDialog(frmR, objIDAO.permisoSalida(frmS.getTxtDocumento().getText(),frmS.getTxtPlacas().getText()));
-                JOptionPane.showMessageDialog(frmR, objIDAO.ActualizarSalida(frmS.getTxtDocumento().getText()));
+                    
+      
+                }else{
+                    JOptionPane.showMessageDialog(frmR, objIDAO.permisoSalida(frmS.getTxtDocumento().getText(),frmS.getTxtPlacas().getText()));
+                    JOptionPane.showMessageDialog(frmR, objIDAO.ActualizarSalida(frmS.getTxtDocumento().getText()));
+                }
+            } catch (IOException ex) {
+                Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         
 
         
+        
        
        //Salir
        if ((ae.getSource().equals(frmP.getMnuSalir()))) {
-            int resp = JOptionPane.showConfirmDialog(frmP, "Desea terminar la ejecucion?...", "Salir", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
-            if (resp == JOptionPane.YES_OPTION) {
-                frmP.dispose();
+           IngresoDAO objIDAO = new IngresoDAO();
+            try {
+                if("Salida denegada".equals(objIDAO.TodosFuera())){
+                    
+                    JOptionPane.showMessageDialog(null, "Todavia hay personas dentro de la institucion");
+                    objIDAO.Dentro();
+                    
+                    
+                }else{
+                    int resp = JOptionPane.showConfirmDialog(frmP, "Desea terminar la ejecucion?...", "Salir", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+                    if (resp == JOptionPane.YES_OPTION) {
+                        frmP.dispose();
+                    }
+                    
+                }
+            } catch (IOException ex) {
+                Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
             }
+            
         }
     }
     

@@ -1,22 +1,201 @@
-Puerta 2;Antonio Perez;Cedula Ciudadania;Automovil;Docente;ADS784
-Puerta 2;Juan;Cedula Ciudadania;Moto;Visitante;ADS324
-Puerta 3;Daniela Rodriguez;Código Institucional;Bicicleta;Estudiante;asw2145
-2;Daniela Perez;Cedula Ciudadania;Moto;Docente;qwe125
-1;aaa;Cedula ciudadania;Automovil;Docente;asd123
-2;Sergio;Tarjeta de identidad;Peatonal;Estudiante;N/a
-5;Zeus ;Cedula ciudadania;Moto;Docente;123Avd
-3;Roberto Salas;Cedula ciudadania;Automovil;Docente;ADS123
-2;Andrea;Cedula ciudadania;Moto;Estudiante;SDW867
-2;Andrea;Tarjeta de identidad;Moto;Estudiante;ZSA567
-2;Andres;Cedula ciudadania;Moto;Docente;QHF354
-3;MaryLuz;Cedula ciudadania;Automovil;Administrativo;ERS234
-4;Arjuna;Cedula ciudadania;Bicicleta;Trabajador;QED456
-4;Ricardo Perez;Tarjeta de identidad;Moto;Trabajador;AQW524
-4;Sergio Saldana;Tarjeta de identidad;Peatonal;Visitante;N/A
-4;Sergio L;Tarjeta de identidad;Peatonal;Visitante;N/A
-4;Sergio Saldana;Tarjeta de identidad;Peatonal;Visitante;N/A
-3;Gustavo Perez;Cedula ciudadania;Automovil;Docente;SWQ548
-3;David Salamanca;Cedula ciudadania;Automovil;Docente;ABC456
-5;Juanita Perez;Tarjeta de identidad;Peatonal;Administrativo;N/A
-3;Alexander;Cedula ciudadania;Bicicleta;Docente;CWBlanca
-1;12;Cedula ciudadania;Automovil;Docente;ASD
+
+
+25/47/2023 10:50:58
+Nuevo ingreso
+
+Nuevo ingreso
+5
+Mario Duarte
+Cedula ciudadania
+Bicicleta
+Administrativo
+BMWGris
+25/47/2023 10:51:57
+Consulta de la BD
+
+Puerta: 1
+Nombre: Catalina Laiton
+Tipo de Documento: Cedula Ciudadania
+Numero Documento: 1233501634
+Ingreso: Automovil
+Motivo: Estudiante
+Placas: ABC123
+Estado: Salida
+
+25/47/2023 10:51:57
+Consulta de la BD
+
+Puerta: 4
+Nombre: Sergio Saldana
+Tipo de Documento: Tarjeta de identidad
+Numero Documento: 98093055292
+Ingreso: Peatonal
+Motivo: Visitante
+Placas: N/A
+Estado: Salida
+
+25/47/2023 10:51:57
+Consulta de la BD
+
+Puerta: 3
+Nombre: Gustavo Perez
+Tipo de Documento: Cedula ciudadania
+Numero Documento: 1547856
+Ingreso: Automovil
+Motivo: Docente
+Placas: SWQ548
+Estado: Salida
+
+25/47/2023 10:51:57
+Consulta de la BD
+
+Puerta: 3
+Nombre: David Salamanca
+Tipo de Documento: Cedula ciudadania
+Numero Documento: 123456
+Ingreso: Automovil
+Motivo: Docente
+Placas: ABC456
+Estado: Entrada
+
+25/47/2023 10:51:57
+Consulta de la BD
+
+Puerta: 5
+Nombre: Juanita Perez
+Tipo de Documento: Tarjeta de identidad
+Numero Documento: 987654
+Ingreso: Peatonal
+Motivo: Administrativo
+Placas: N/A
+Estado: Salida
+
+25/47/2023 10:51:57
+Consulta de la BD
+
+Puerta: 3
+Nombre: Alexander
+Tipo de Documento: Cedula ciudadania
+Numero Documento: 1423617
+Ingreso: Bicicleta
+Motivo: Docente
+Placas: CWBlanca
+Estado: Entrada
+
+25/47/2023 10:51:57
+Consulta de la BD
+
+Puerta: 3
+Nombre: Mary Luz Peña
+Tipo de Documento: Cedula ciudadania
+Numero Documento: 52193437
+Ingreso: Moto
+Motivo: Administrativo
+Placas: PTY458
+Estado: Salida
+
+25/47/2023 10:51:57
+Consulta de la BD
+
+Puerta: 5
+Nombre: Mario Duarte
+Tipo de Documento: Cedula ciudadania
+Numero Documento: 1013111911
+Ingreso: Bicicleta
+Motivo: Administrativo
+Placas: BMWGris
+Estado: Entrada
+
+25/47/2023 10:52:3
+Busqueda de ingreso
+
+Puerta: 5
+Nombre: Mario Duarte
+Tipo de Documento: Cedula ciudadania
+Numero Documento: 1013111911
+Ingreso: Bicicleta
+Motivo: Administrativo
+Placas: BMWGris
+Estado: Entrada
+
+25/47/2023 10:52:6
+Busqueda de ingreso
+No se encontraron datos
+
+25/47/2023 10:52:22
+Salida Autorizada
+
+Numero Documento: 1013111911
+Placas: BMWGris
+
+25/47/2023 10:52:22
+Salida Autorizada
+
+Numero Documento: 1013111911
+Placas: BMWGris
+
+25/47/2023 10:52:28
+Salida denegada,los datos no coinciden, se pide ingresar PIN
+
+25/47/2023 10:50:58
+Pin incorrecto, se velve a solicitar pin
+
+25/47/2023 10:50:58
+Pin valido, Nuevo intento de solicitud de salida
+
+25/47/2023 10:52:40
+Cierre denegado, quedan personas dentro de la institucion
+
+25/47/2023 10:52:40
+Persona dentro al momento del cierre
+
+Nombre: David Salamanca
+ Numero Documento123456
+
+25/47/2023 10:52:40
+Persona dentro al momento del cierre
+
+Nombre: Alexander
+ Numero Documento1423617
+
+25/47/2023 10:55:56
+Salida Autorizada
+
+Numero Documento: 123456
+Placas: ABC456
+
+25/47/2023 10:55:56
+Salida Autorizada
+
+Numero Documento: 123456
+Placas: ABC456
+
+25/47/2023 10:56:24
+Salida Autorizada
+
+Numero Documento: 1423617
+Placas: CWBlanca
+
+25/47/2023 10:56:24
+Salida Autorizada
+
+Numero Documento: 1423617
+Placas: CWBlanca
+
+25/47/2023 10:56:41
+Salida denegada,los datos no coinciden, se pide ingresar PIN
+
+25/47/2023 10:55:37
+Pin valido, Nuevo intento de solicitud de salida
+
+25/47/2023 10:56:57
+Cierre del sistema, hasta luego
+
+25/47/2023 11:3:29SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
+25/47/2023 11:3:46
+SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
+25/47/2023 11:4:45 Arranque de programa 
+SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
+25/47/2023 11:5:1
+Cierre del sistema, hasta luego
+

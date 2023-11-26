@@ -50,7 +50,7 @@ public class ArchPdf {
      * @param ListaF
      */
 
-    public void crear_PDF(ListaIngresos ListaI){
+    public void crear_PDF(Conexion conLeer){
         //abre ventana de dialogo "guardar"
         //Colocar_Destino();
         //si destino es diferente de null
@@ -66,7 +66,7 @@ public class ArchPdf {
                 mipdf.addSubject(s); //se añade el asunto del documento
                 mipdf.addKeywords(k); //Se agregan palabras claves*/
                 
-                mipdf.add(new Paragraph("Informacion de Ingresos "+ListaI.toString()+"\n"));
+                mipdf.add(new Paragraph("Informacion de Ingresos \n"+conLeer.leerDatos()+"\n"));
                 //mipdf.add(new Paragraph("subtotal "+objEm.valorPago()+"\n"));
                 //mipdf.add(new Paragraph("IVA  "+objEm.IVA()+"\n"));
                 // se añade el contendio del PDF

@@ -92,11 +92,11 @@ public class Ingreso {
     public String toString() {
         return "\nPuerta: " + puerta + "\nNombre: " + nombre + 
                 "\nTipo Documento: " + tipoDocumento + "\n#Documento: " + nDocumento +
-                "\nIngreso: " + ingreso + "\nMotivo=" + motivo +
+                "\nIngreso: " + ingreso + "\nMotivo:" + motivo +
                 "\nPlacas: " + placas;
     }
     
     public String datos(){
-        return puerta+";"+nombre+";"+tipoDocumento+";"+ingreso+";"+motivo+";"+placas;
+        return "Nuevo ingreso\n"+puerta+"\n"+nombre+"\n"+tipoDocumento+"\n"+ingreso+"\n"+motivo+"\n"+placas;
     }
 }
