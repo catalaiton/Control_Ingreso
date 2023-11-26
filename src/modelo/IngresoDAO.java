@@ -12,6 +12,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.mail.MessagingException;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
@@ -25,12 +26,14 @@ public class IngresoDAO {
     Conexion conArch;
     Fecha fecha;
     Hora hora;
+    EnvioCorreo correo;
 
     public IngresoDAO(Ingreso objI, Conexion con) {
         this.objI = objI;
         this.conArch = conArch;
         this.fecha = fecha;
         this.hora = hora;
+        this.correo = correo;
     }
 
     public IngresoDAO() {
@@ -38,6 +41,7 @@ public class IngresoDAO {
         this.conArch = new Conexion();
         this.fecha = new Fecha();
         this.hora = new Hora();
+        this.correo = new EnvioCorreo();
     }
     
     //Consultar registros de la BD
@@ -334,7 +338,7 @@ public class IngresoDAO {
     }
     
     //Comprobar para salida
-    public String TodosFuera() throws IOException {
+    public String TodosFuera() throws IOException, MessagingException {
         String mensaje = "";
         ConexionBD con = new ConexionBD();
 
@@ -351,6 +355,7 @@ public class IngresoDAO {
                     mensaje = "Salida autorizada";
                     String datosA = fecha.toString()+" "+hora.toString()+"\n"+"Cierre del sistema, hasta luego\n";
                     conArch.EscribeDatos(datosA);
+                    correo.transfer_to_email_adjunto("El sistema se ha cerrado, a continuación se adjunta el reporte de insidencias", "Sistema cerrado");
                 } else {
                     mensaje = "Salida denegada";
                     String datosA = fecha.toString()+" "+hora.toString()+"\n"+"Cierre denegado, quedan personas dentro de la institucion\n";
@@ -388,6 +393,7 @@ public class IngresoDAO {
                 
                 String datosA= fecha.toString()+" "+hora.toString()+"\n"+"Persona dentro al momento del cierre\n\nNombre: "+datos.getString("nombre")+"\n Numero Documento"+datos.getString("nDocumento")+"\n";
                 conArch.EscribeDatos(datosA);
+                correo.transfer_to_email("Se intento un cierre del sistema cuando aún habian personas dentro de la institucion \n"+datosA, "Intento de cierre del sistema");
             }
 
             if (mensaje.length() > 0) {

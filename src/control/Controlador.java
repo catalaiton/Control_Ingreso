@@ -7,8 +7,10 @@ import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
+import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.mail.MessagingException;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
@@ -33,6 +35,8 @@ public class Controlador implements ActionListener{
     IngresoDAO ingreso;
     frmSalida frmS;
     frmBusqueda frmB;
+    EnvioCorreo correo;
+            
     
     public Controlador() {
 
@@ -46,6 +50,7 @@ public class Controlador implements ActionListener{
         this.frmB = new frmBusqueda();
         this.fecha = new Fecha();
         this.hora = new Hora();
+        this.correo = new EnvioCorreo();
     }
     
     
@@ -207,12 +212,19 @@ public class Controlador implements ActionListener{
                 if("Salida denegada".equals(objIDAO.permisoSalida(frmS.getTxtDocumento().getText(),frmS.getTxtPlacas().getText()))){
                     boolean pinValido = false;
                     int intentos = 3;
-
+                    Random random = new Random();
+                    int pin = 1000+ random.nextInt(9000);
+                    String pinMensaje = Integer.toString(pin);
+                    EnvioCorreo correo = new EnvioCorreo();
+                    correo.transfer_to_email("Salida denegada por datos incorrectos.\nLos datos siguientes datos: \nNumero de documento: "+frmS.getTxtDocumento().getText()
+                            +"\nPlacas o Ingreso: "+frmS.getTxtPlacas().getText()
+                            +"\nNo coinciden con la base de datos, para desbloquear el sistema ingrese el siguiente pin: "+pinMensaje,"Salida Denegada UD Tecnologica");
+                    JOptionPane.showMessageDialog(null, "mensaje enviado");
                     while (!pinValido && intentos > 0) {
                         
                         String pinIngresado = JOptionPane.showInputDialog(null, "Salida denegada, ingrese el pin para volver a intentar:");
                         
-                        if (pinIngresado != null && pinIngresado.equals("UD1234")) {
+                        if (pinIngresado != null && pinIngresado.equals(pinMensaje)) {
                             JOptionPane.showMessageDialog(null, "PIN válido. Vuelve a llenar los datos");
                             pinValido = true;
                             con.EscribeDatos(fecha.toString()+" "+hora.toString()+"\n"+"Pin valido, Nuevo intento de solicitud de salida\n");
@@ -247,15 +259,19 @@ public class Controlador implements ActionListener{
                     JOptionPane.showMessageDialog(null, "Todavia hay personas dentro de la institucion");
                     objIDAO.Dentro();
                     
-                    
                 }else{
+                    
                     int resp = JOptionPane.showConfirmDialog(frmP, "Desea terminar la ejecucion?...", "Salir", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
                     if (resp == JOptionPane.YES_OPTION) {
+                        ArchPdf archivo = new ArchPdf();
+                        archivo.crear_PDF(con);
                         frmP.dispose();
                     }
                     
                 }
             } catch (IOException ex) {
+                Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (MessagingException ex) {
                 Logger.getLogger(Controlador.class.getName()).log(Level.SEVERE, null, ex);
             }
             

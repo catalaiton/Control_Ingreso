@@ -71,7 +71,7 @@ public class ArchPdf {
                 //mipdf.add(new Paragraph("IVA  "+objEm.IVA()+"\n"));
                 // se añade el contendio del PDF
                 mipdf.close(); //se cierra el PDF&
-                JOptionPane.showMessageDialog(null,"Documento PDF creado");
+                
             } catch (DocumentException | FileNotFoundException ex) {
                 JOptionPane.showMessageDialog(null,"Error : "+ex.getMessage());
             } catch (IOException ex) {
