@@ -54,7 +54,7 @@ public class Fecha {
         Calendar fecha =Calendar.getInstance();
         
         this.dd = fecha.get(Calendar.DAY_OF_MONTH);
-        this.mm = fecha.get(Calendar.MONTH+1);
+        this.mm = fecha.get(Calendar.MONTH)+1;
         this.aaaa = fecha.get(Calendar.YEAR);
     }
       

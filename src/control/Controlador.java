@@ -233,6 +233,9 @@ public class Controlador implements ActionListener{
                             JOptionPane.showMessageDialog(null, "PIN incorrecto. Vuelva a intentarlo" );
                             con.EscribeDatos(fecha.toString()+" "+hora.toString()+"\n"+"Pin incorrecto, se velve a solicitar pin\n");
                             
+                            pin = 1000+ random.nextInt(9000);
+                            pinMensaje = Integer.toString(pin);
+                            correo.transfer_to_email("Se ingreso un pin incorrecto al sistema, se ha generado un nuevo pin: "+pin, "Error en ingreso del pin");
                         }
                     }
                     

@@ -14,9 +14,9 @@ import javax.mail.internet.*;
 public class EnvioCorreo {
     public  void transfer_to_email(String mensaje,String asunto){
         
-        String correoEnvia = "lclaitonp@gmail.com";
-        String contraseña = "fqoiyjnogbueikhb";
-        String correo = "laitonlaura38@gmail.com";
+        String correoEnvia = "tecnoingresoud@gmail.com";
+        String contraseña = "xcgkfbpgsqgpplgv ";
+        String correo = "lclaitonp@gmail.com";
         
         Properties objetoPEC = new Properties();
         
@@ -40,7 +40,7 @@ public class EnvioCorreo {
             transporte.connect(correoEnvia,contraseña);
             transporte.sendMessage(mail, mail.getRecipients(Message.RecipientType.TO));
             transporte.close();
-            
+            JOptionPane.showMessageDialog(null, "Mensaje enviado");
             
             
         }catch (Exception ex){
@@ -52,9 +52,9 @@ public class EnvioCorreo {
     
     public  void transfer_to_email_adjunto(String mensaje,String asunto) throws MessagingException{
         
-        String correoEnvia = "lclaitonp@gmail.com";
-        String contraseña = "fqoiyjnogbueikhb";
-        String correo = "laitonlaura38@gmail.com";
+        String correoEnvia = "tecnoingresoud@gmail.com";
+        String contraseña = "xcgkfbpgsqgpplgv ";
+        String correo = "lclaitonp@gmail.com";
         
         Properties objetoPEC = new Properties();
         
@@ -89,6 +89,7 @@ public class EnvioCorreo {
             transporte.connect(correoEnvia,contraseña);
             transporte.sendMessage(mail, mail.getRecipients(Message.RecipientType.TO));
             transporte.close();
+            JOptionPane.showMessageDialog(null, "Mensaje enviado");
         }catch (Exception ex){
             JOptionPane.showMessageDialog(null, "Error en envio de correo....\n"+ex);
         }

@@ -1,457 +1,78 @@
 
-
-25/47/2023 10:50:58
-Nuevo ingreso
-
-Nuevo ingreso
-5
-Mario Duarte
-Cedula ciudadania
-Bicicleta
-Administrativo
-BMWGris
-25/47/2023 10:51:57
-Consulta de la BD
-
-Puerta: 1
-Nombre: Catalina Laiton
-Tipo de Documento: Cedula Ciudadania
-Numero Documento: 1233501634
-Ingreso: Automovil
-Motivo: Estudiante
-Placas: ABC123
-Estado: Salida
-
-25/47/2023 10:51:57
-Consulta de la BD
-
-Puerta: 4
-Nombre: Sergio Saldana
-Tipo de Documento: Tarjeta de identidad
-Numero Documento: 98093055292
-Ingreso: Peatonal
-Motivo: Visitante
-Placas: N/A
-Estado: Salida
-
-25/47/2023 10:51:57
-Consulta de la BD
-
-Puerta: 3
-Nombre: Gustavo Perez
-Tipo de Documento: Cedula ciudadania
-Numero Documento: 1547856
-Ingreso: Automovil
-Motivo: Docente
-Placas: SWQ548
-Estado: Salida
-
-25/47/2023 10:51:57
-Consulta de la BD
-
-Puerta: 3
-Nombre: David Salamanca
-Tipo de Documento: Cedula ciudadania
-Numero Documento: 123456
-Ingreso: Automovil
-Motivo: Docente
-Placas: ABC456
-Estado: Entrada
-
-25/47/2023 10:51:57
-Consulta de la BD
-
-Puerta: 5
-Nombre: Juanita Perez
-Tipo de Documento: Tarjeta de identidad
-Numero Documento: 987654
-Ingreso: Peatonal
-Motivo: Administrativo
-Placas: N/A
-Estado: Salida
-
-25/47/2023 10:51:57
-Consulta de la BD
-
-Puerta: 3
-Nombre: Alexander
-Tipo de Documento: Cedula ciudadania
-Numero Documento: 1423617
-Ingreso: Bicicleta
-Motivo: Docente
-Placas: CWBlanca
-Estado: Entrada
-
-25/47/2023 10:51:57
-Consulta de la BD
-
-Puerta: 3
-Nombre: Mary Luz Peña
-Tipo de Documento: Cedula ciudadania
-Numero Documento: 52193437
-Ingreso: Moto
-Motivo: Administrativo
-Placas: PTY458
-Estado: Salida
-
-25/47/2023 10:51:57
-Consulta de la BD
-
-Puerta: 5
-Nombre: Mario Duarte
-Tipo de Documento: Cedula ciudadania
-Numero Documento: 1013111911
-Ingreso: Bicicleta
-Motivo: Administrativo
-Placas: BMWGris
-Estado: Entrada
-
-25/47/2023 10:52:3
+26/48/2023 0:3:45 Arranque de programa 
+SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
+26/48/2023 0:3:53
 Busqueda de ingreso
-
-Puerta: 5
-Nombre: Mario Duarte
-Tipo de Documento: Cedula ciudadania
-Numero Documento: 1013111911
-Ingreso: Bicicleta
-Motivo: Administrativo
-Placas: BMWGris
-Estado: Entrada
-
-25/47/2023 10:52:6
-Busqueda de ingreso
-No se encontraron datos
-
-25/47/2023 10:52:22
-Salida Autorizada
-
-Numero Documento: 1013111911
-Placas: BMWGris
-
-25/47/2023 10:52:22
-Salida Autorizada
-
-Numero Documento: 1013111911
-Placas: BMWGris
-
-25/47/2023 10:52:28
-Salida denegada,los datos no coinciden, se pide ingresar PIN
-
-25/47/2023 10:50:58
-Pin incorrecto, se velve a solicitar pin
-
-25/47/2023 10:50:58
-Pin valido, Nuevo intento de solicitud de salida
-
-25/47/2023 10:52:40
-Cierre denegado, quedan personas dentro de la institucion
-
-25/47/2023 10:52:40
-Persona dentro al momento del cierre
-
-Nombre: David Salamanca
- Numero Documento123456
-
-25/47/2023 10:52:40
-Persona dentro al momento del cierre
-
-Nombre: Alexander
- Numero Documento1423617
-
-25/47/2023 10:55:56
-Salida Autorizada
-
-Numero Documento: 123456
-Placas: ABC456
-
-25/47/2023 10:55:56
-Salida Autorizada
-
-Numero Documento: 123456
-Placas: ABC456
-
-25/47/2023 10:56:24
-Salida Autorizada
-
-Numero Documento: 1423617
-Placas: CWBlanca
-
-25/47/2023 10:56:24
-Salida Autorizada
-
-Numero Documento: 1423617
-Placas: CWBlanca
-
-25/47/2023 10:56:41
-Salida denegada,los datos no coinciden, se pide ingresar PIN
-
-25/47/2023 10:55:37
-Pin valido, Nuevo intento de solicitud de salida
-
-25/47/2023 10:56:57
-Cierre del sistema, hasta luego
-
-25/47/2023 11:3:29SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
-25/47/2023 11:3:46
-SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
-25/47/2023 11:4:45 Arranque de programa 
-SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
-25/47/2023 11:5:1
-Cierre del sistema, hasta luego
-
-26/48/2023 0:5:6 Arranque de programa 
-SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
-26/48/2023 0:5:12
-Salida denegada,los datos no coinciden, se pide ingresar PIN
-
-26/48/2023 0:5:6
-Pin valido, Nuevo intento de solicitud de salida
-
-26/48/2023 0:7:1 Arranque de programa 
-SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
-26/48/2023 0:7:6
-Salida denegada,los datos no coinciden, se pide ingresar PIN
-
-26/48/2023 0:7:1
-Pin valido, Nuevo intento de solicitud de salida
-
-26/48/2023 0:7:50 Arranque de programa 
-SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
-26/48/2023 0:7:53
-Salida denegada,los datos no coinciden, se pide ingresar PIN
-
-26/48/2023 0:7:49
-Pin valido, Nuevo intento de solicitud de salida
-
-26/48/2023 0:13:59 Arranque de programa 
-SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
-26/48/2023 0:14:2
-Salida denegada,los datos no coinciden, se pide ingresar PIN
-
-26/48/2023 0:13:59
-Pin valido, Nuevo intento de solicitud de salida
-
-26/48/2023 0:14:41
-Salida denegada,los datos no coinciden, se pide ingresar PIN
-
-26/48/2023 0:13:59
-Pin valido, Nuevo intento de solicitud de salida
-
-26/48/2023 0:15:46 Arranque de programa 
-SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
-26/48/2023 0:15:51
-Salida denegada,los datos no coinciden, se pide ingresar PIN
-
-26/48/2023 0:15:46
-Pin valido, Nuevo intento de solicitud de salida
-
-26/48/2023 0:21:9 Arranque de programa 
-SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
-26/48/2023 0:21:12
-Salida denegada,los datos no coinciden, se pide ingresar PIN
-
-26/48/2023 0:21:9
-Pin valido, Nuevo intento de solicitud de salida
-
-26/48/2023 0:22:50 Arranque de programa 
-SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
-26/48/2023 0:22:54
-Salida denegada,los datos no coinciden, se pide ingresar PIN
-
-26/48/2023 0:22:50
-Pin valido, Nuevo intento de solicitud de salida
-
-26/48/2023 0:25:56 Arranque de programa 
-SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
-26/48/2023 0:26:0
-Salida denegada,los datos no coinciden, se pide ingresar PIN
-
-26/48/2023 0:25:56
-Pin valido, Nuevo intento de solicitud de salida
-
-26/48/2023 0:36:32 Arranque de programa 
-SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
-26/48/2023 0:36:34
-Cierre del sistema, hasta luego
-
-26/48/2023 0:36:32
-Nuevo ingreso
-
-Nuevo ingreso
-2
-x
-Cedula ciudadania
-Automovil
-Docente
-AER187
-
-26/48/2023 0:36:56
-Cierre denegado, quedan personas dentro de la institucion
-
-26/48/2023 0:36:56
-Persona dentro al momento del cierre
-
-Nombre: x
- Numero Documento123
-
-26/48/2023 0:37:39 Arranque de programa 
-SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
-26/48/2023 0:37:40
-Cierre denegado, quedan personas dentro de la institucion
-
-26/48/2023 0:37:40
-Persona dentro al momento del cierre
-
-Nombre: x
- Numero Documento123
-
-26/48/2023 0:40:25 Arranque de programa 
-SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
-26/48/2023 0:40:30
-Consulta de la BD
-
-Puerta: 1
-Nombre: Catalina Laiton
-Tipo de Documento: Cedula Ciudadania
-Numero Documento: 1233501634
-Ingreso: Automovil
-Motivo: Estudiante
-Placas: ABC123
-Estado: Salida
-
-26/48/2023 0:40:30
-Consulta de la BD
-
-Puerta: 4
-Nombre: Sergio Saldana
-Tipo de Documento: Tarjeta de identidad
-Numero Documento: 98093055292
-Ingreso: Peatonal
-Motivo: Visitante
-Placas: N/A
-Estado: Salida
-
-26/48/2023 0:40:30
-Consulta de la BD
-
-Puerta: 3
-Nombre: Gustavo Perez
-Tipo de Documento: Cedula ciudadania
-Numero Documento: 1547856
-Ingreso: Automovil
-Motivo: Docente
-Placas: SWQ548
-Estado: Salida
-
-26/48/2023 0:40:30
-Consulta de la BD
-
-Puerta: 3
-Nombre: David Salamanca
-Tipo de Documento: Cedula ciudadania
-Numero Documento: 123456
-Ingreso: Automovil
-Motivo: Docente
-Placas: ABC456
-Estado: Salida
-
-26/48/2023 0:40:30
-Consulta de la BD
-
-Puerta: 5
-Nombre: Juanita Perez
-Tipo de Documento: Tarjeta de identidad
-Numero Documento: 987654
-Ingreso: Peatonal
-Motivo: Administrativo
-Placas: N/A
-Estado: Salida
-
-26/48/2023 0:40:30
-Consulta de la BD
-
-Puerta: 3
-Nombre: Alexander
-Tipo de Documento: Cedula ciudadania
-Numero Documento: 1423617
-Ingreso: Bicicleta
-Motivo: Docente
-Placas: CWBlanca
-Estado: Salida
-
-26/48/2023 0:40:30
-Consulta de la BD
-
-Puerta: 3
-Nombre: Mary Luz Peña
-Tipo de Documento: Cedula ciudadania
-Numero Documento: 52193437
-Ingreso: Moto
-Motivo: Administrativo
-Placas: PTY458
-Estado: Salida
-
-26/48/2023 0:40:30
-Consulta de la BD
-
-Puerta: 5
-Nombre: Mario Duarte
-Tipo de Documento: Cedula ciudadania
-Numero Documento: 1013111911
-Ingreso: Bicicleta
-Motivo: Administrativo
-Placas: BMWGris
-Estado: Salida
-
-26/48/2023 0:40:30
-Consulta de la BD
 
 Puerta: 2
-Nombre: x
-Tipo de Documento: Cedula ciudadania
-Numero Documento: 123
-Ingreso: Automovil
-Motivo: Docente
-Placas: AER187
-Estado: Entrada
+Nombre: Arjuna
+Tipo de Documento: Tarjeta de identidad
+Numero Documento: 123456789
+Ingreso: Peatonal
+Motivo: Estudiante
+Placas: N/A
+Estado: Salida
 
-26/48/2023 0:40:43
-Salida Autorizada
+26/10/2023 0:4:46 Arranque de programa 
+SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
+26/48/2023 0:5:12 Arranque de programa 
+SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
+26/10/2023 0:6:1 Arranque de programa 
+SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
+26/10/2023 0:6:55 Arranque de programa 
+SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
+26/48/2023 0:7:16 Arranque de programa 
+SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
+26/48/2023 0:8:47 Arranque de programa 
+SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
+26/11/2023 0:10:32 Arranque de programa 
+SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
+26/11/2023 12:14:13 Arranque de programa 
+SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
+26/11/2023 12:16:27 Arranque de programa 
+SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
+26/11/2023 12:16:32
+Salida denegada,los datos no coinciden, se pide ingresar PIN
 
-Numero Documento: 123
-Placas: AER187
+26/11/2023 12:16:27
+Pin incorrecto, se velve a solicitar pin
 
-26/48/2023 0:40:43
-Salida Autorizada
+26/11/2023 12:16:27
+Pin valido, Nuevo intento de solicitud de salida
 
-Numero Documento: 123
-Placas: AER187
+26/11/2023 12:18:48 Arranque de programa 
+SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
+26/11/2023 12:18:51
+Salida denegada,los datos no coinciden, se pide ingresar PIN
 
-26/48/2023 0:40:47
+26/11/2023 12:18:48
+Pin incorrecto, se velve a solicitar pin
+
+26/11/2023 12:18:48
+Pin valido, Nuevo intento de solicitud de salida
+
+26/11/2023 12:31:39 Arranque de programa 
+SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
+26/11/2023 12:31:41
 Cierre del sistema, hasta luego
 
-26/48/2023 0:58:7 Arranque de programa 
+26/11/2023 12:32:12 Arranque de programa 
 SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
-26/48/2023 0:58:8
+26/11/2023 12:32:14
 Cierre del sistema, hasta luego
 
-26/48/2023 0:58:44 Arranque de programa 
+26/11/2023 12:34:00 Arranque de programa 
 SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
-26/48/2023 0:58:53
+26/11/2023 12:34:02
 Cierre del sistema, hasta luego
 
-26/48/2023 1:0:39 Arranque de programa 
+26/11/2023 12:35:49 Arranque de programa 
 SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
-26/48/2023 1:0:41
+26/11/2023 12:35:51
 Cierre del sistema, hasta luego
 
-26/48/2023 1:1:34 Arranque de programa 
+26/11/2023 12:37:52 Arranque de programa 
 SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
-26/48/2023 1:1:36
-Cierre del sistema, hasta luego
-
-26/48/2023 1:3:19 Arranque de programa 
-SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
-26/48/2023 1:3:20
+26/11/2023 12:37:54
 Cierre del sistema, hasta luego
 
