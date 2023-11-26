@@ -16,7 +16,7 @@ public class EnvioCorreo {
         
         String correoEnvia = "tecnoingresoud@gmail.com";
         String contraseña = "xcgkfbpgsqgpplgv ";
-        String correo = "lclaitonp@gmail.com";
+        String correo = "pepitopruebas904@gmail.com";
         
         Properties objetoPEC = new Properties();
         
@@ -54,7 +54,7 @@ public class EnvioCorreo {
         
         String correoEnvia = "tecnoingresoud@gmail.com";
         String contraseña = "xcgkfbpgsqgpplgv ";
-        String correo = "lclaitonp@gmail.com";
+        String correo = "pepitopruebas904@gmail.com";
         
         Properties objetoPEC = new Properties();
         

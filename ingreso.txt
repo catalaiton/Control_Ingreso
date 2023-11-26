@@ -76,3 +76,38 @@ SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
 26/11/2023 12:37:54
 Cierre del sistema, hasta luego
 
+26/11/2023 13:05:43 Arranque de programa 
+SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
+26/11/2023 13:05:45
+Cierre del sistema, hasta luego
+
+26/11/2023 13:06:00 Arranque de programa 
+SISTEMA DE GESTION DE INGRESO Y SALIDA UD SEDE TECNOLOGICA
+26/11/2023 13:06:04
+Salida denegada,los datos no coinciden, se pide ingresar PIN
+
+26/11/2023 13:06:00
+Pin incorrecto, se velve a solicitar pin
+
+26/11/2023 13:06:00
+Pin valido, Nuevo intento de solicitud de salida
+
+26/11/2023 13:06:41
+Busqueda de ingreso
+
+Puerta: 1
+Nombre: Catalina Laiton
+Tipo de Documento: Cedula Ciudadania
+Numero Documento: 1233501634
+Ingreso: Automovil
+Motivo: Estudiante
+Placas: ABC123
+Estado: Salida
+
+26/11/2023 13:06:54
+Busqueda de ingreso
+No se encontraron datos
+
+26/11/2023 13:07:06
+Cierre del sistema, hasta luego
+
